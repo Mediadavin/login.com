@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media.Davin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-image: url('background-image.jpg'); /* Ganti dengan URL gambar latar belakang Anda */
+      background-size: cover;
+      background-position: center;
+      color: #0e65d6;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    #form-container {
+      width: 400px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    #form-container h2 {
+      text-align: center;
+      color: #1E90FF;
+      margin-bottom: 20px;
+    }
+
+    #form-container label {
+      display: block;
+      margin-bottom: 10px;
+      color: #1E90FF;
+    }
+
+    #form-container input[type="text"],
+    #form-container input[type="tel"] {
+      width: calc(100% - 22px);
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 2px solid #1E90FF;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    #form-container input[type="submit"] {
+      background-color: #1E90FF;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    #form-container input[type="submit"]:hover {
+      background-color: #004B8D;
+    }
+
+    #footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 12px;
+      color: #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>LOGIN MEDIA DAVIN</h1>
+  </header>
+
+  <div id="form-container">
+    <form action="" method="post">
+      <label for="nama">Masukan Nomor Regristasi</label>
+      <label for="nama">Passwoard:</label>
+      <input type="text" id="sandi" name="sandi" required>
+      <input type="submit" value="Simpan Data">
+    </form>
+  </div>
+
+  <footer id="footer">
+   Media.Davin &copy; 2024 - All Rights Reserved
+  </footer>
+</body>
+
+</html>
+
+  <script>
+    function validateForm() {
+      var nama = document.getElementById('nama').value;
+      var ktp = document.getElementById('ktp').value;
+
+      // Check if nama is "0908701213" and ktp is "123456"
+      if (nama === "3040112233" && ktp === "123456") {
+        // Redirect to new page
+        window.location.href = "halaman1.html";
+        return false; // Prevent form submission
+      } 
+      // Check if nama is "121212" and ktp is "121212"
+      else if (nama === "3040223344" && ktp === "123456") {
+        // Redirect to halaman2.html
+        window.location.href = "halaman2.html";
+        return false; // Prevent form submission
+      } 
+      // Check if nama is "121212" and ktp is "121212"
+      else if (nama === "3040334455" && ktp === "prambanan") {
+        // Redirect to halaman2.html
+        window.location.href = "halaman2.html";
+        return false; // Prevent form submission
+      }
+       else {
+        // Alert user and prevent form submission
+        alert("Nama atau kata sandi tidak sesuai.");
+        return false;
+      }
+    }
+  </script>
+</body>
+
+</html>
